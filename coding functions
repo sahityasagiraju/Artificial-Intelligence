@@ -1,0 +1,69 @@
+#assigning elements to different lists
+def assign_ele_to_list():
+    
+    list_1=[]
+    list_2=[]
+    list_3=[]
+    
+    n = int(input("Enter number of elements to be added to list_1: "))
+    print("enter",n,"elements to enter into list_1: ")
+    for i in range(0, n):
+        ele = int(input())
+        list_1.append(ele)
+  
+
+    n = int(input("Enter number of elements to be added to list_2: "))
+    print("enter",n,"elements to enter into list_2: ")
+    for i in range(0, n):
+        ele = int(input())
+        list_2.append(ele)
+    
+
+    n = int(input("Enter number of elements to be added to list_3: "))
+    print("enter",n,"elements to enter into list_3: ")
+    for i in range(0, n):
+        ele = int(input())
+        list_3.append(ele)
+   
+    print("\n")
+    print("list_1: ")
+    for i in list_1: 
+        if i > 0: 
+            print(i,end= " ")
+    print("\n")
+    
+    print("list_2: ")
+    for i in list_2: 
+        if i > 0: 
+            print(i,end= " ")
+    print("\n")
+    
+    print("list_3: ")
+    for i in list_3: 
+        if i > 0: 
+            print(i,end= " ")
+    print("\n")
+    
+assign_ele_to_list()
+
+#accesing elements from a tuple
+tuple=(12,35,78,354,13,546,35,67)
+
+def accessing_ele_from_tuple():
+    n=int(input("enter index of element to access: "))
+    print("tuple[",n,"]: ", tuple[n])
+    
+accessing_ele_from_tuple()
+
+#deleting different dictionary elements 
+dictionary={"math":98,"computers":100,"science":95,"english":93,"socialstudies":95}
+
+def deleting_dict_ele():
+    n=input("enter key to be deleted :")
+    dictionary.pop(n)
+    print(dictionary)
+    
+deleting_dict_ele()
+
+
+
